@@ -1,0 +1,9 @@
+{% if noticias %}
+    {% for noticia in noticias %}
+        <a href="/noticia/{{ noticia.id }}">
+            {{ noticia.titulo }}
+        </a><br />
+    {% endfor %}
+{% else %}
+    Nenhum registro encontrado
+{% endif %}
